@@ -2,6 +2,7 @@
     require_once 'conectar.php';
 
     class Usuario extends Conectar{
+        //metodo con consultas no preparadas
         public function comprobarUsuario(){
             try{
                 $correo=$_POST['correo'];
@@ -19,7 +20,7 @@
                 echo '<h1>Error:'.$e->getMessage().'</h1>';
             }
         }
-
+        //metodo con consultas preparadas
         public function comprobarSeguro(){
             try{
                 $correo=$_POST['correo'];
@@ -41,6 +42,7 @@
             }
         }
     }
+
 
 
 
