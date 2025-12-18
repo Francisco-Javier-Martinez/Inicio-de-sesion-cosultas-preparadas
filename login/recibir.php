@@ -9,6 +9,7 @@
     }
     $mensaje="";
     $mensaje1="";
+//si logra entrar vera un mensaje y otro esto tambien depende del checkbox
     if($resultado!=false){
         $fila=$resultado->fetch_assoc();
         $mensaje= '<h1>Bienvenido usuario: '.$fila['nombre'].'</h1>';
@@ -42,4 +43,5 @@
         }
     ?>
 </body>
+
 </html>
