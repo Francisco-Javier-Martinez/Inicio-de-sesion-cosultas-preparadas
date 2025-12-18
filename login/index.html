@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio de sesion</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="login">
+            <h1>Iniciar Sesión</h1>
+            <form action="recibir.php" method="post">
+                <label for="correo">Correo:</label>
+                <input type="text" id="correo" name="correo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="text" id="contrasena" name="contrasena" maxlength="15" minlength="5">
+                <input type="checkbox" id="preparadas" name="preparadas">Usar sentencias preparadas</checkbox>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+    </body>
+</html>
